@@ -82,12 +82,20 @@ void build(string a,string b,string nodeId
     string nodeId,
     string referenceNodeId,
     struct *childNode
-    string genesisReferenceNodeId )
+    string genesisReferenceNodeId,int id,int key )
 {
-
+      int y =  userAuthentication(obj,1,key);
+      if(y==0)
+      {
+          cout<<"user_invalid";
+      }
+      else
+      {
+          cout<<"user_valid"
+      }
 }
 int main()
 {
       struct obj;
-      build("Akshat Garg","fghjk","ghjk","hduiehdo",&obj,"dfgh");
+      build("Akshat Garg","fghjk","ghjk","hduiehdo",&obj,"dfgh",1);
 }
